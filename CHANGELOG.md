@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1] - 2026-08-25
+
+### Added
+
+- Added an aggregate-only MCP provider for organizer counts without task
+  titles, contacts, places, notes, URLs, images, or private page content.
+
 ## [1.0.0] - 2026-07-27
 
 ### Added

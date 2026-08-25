@@ -5,6 +5,7 @@ require_once __DIR__ . "/src/Install/InstallFields.php";
 require_once __DIR__ . "/src/Install/InstallTemplates.php";
 require_once __DIR__ . "/src/Install/InstallPages.php";
 require_once __DIR__ . "/src/Install/Uninstall.php";
+require_once __DIR__ . "/src/McpProviderTrait.php";
 
 /**
  * Folio — data module.
@@ -21,7 +22,7 @@ require_once __DIR__ . "/src/Install/Uninstall.php";
  *
  * @author  Maxim Semenov <maxim@smnv.org> (smnv.org)
  * @license MIT
- * @version 1.0.0
+ * @version 1.0.1
  */
 class Folio extends WireData implements Module
 {
@@ -29,13 +30,14 @@ class Folio extends WireData implements Module
         FolioInstallFields,
         FolioInstallTemplates,
         FolioInstallPages,
-        FolioUninstall;
+        FolioUninstall,
+        FolioMcpProviderTrait;
 
     public static function getModuleInfo(): array
     {
         return [
             "title" => "Folio",
-            "version" => 100,
+            "version" => 101,
             "summary" =>
                 "Personal organizer: Projects -> Sprints -> Tasks, Calendar, Contacts, Links, Places, Goals and Roadmap.",
             "author" => "Maxim Semenov",
@@ -44,6 +46,7 @@ class Folio extends WireData implements Module
             "installs" => ["ProcessFolio"],
             "autoload" => true,
             "singular" => true,
+            "mcpProvider" => true,
         ];
     }
 

@@ -53,6 +53,13 @@ On install the module creates its fields (`folio_*`), templates (`folio-*`) and 
 - ProcessWire >= 3.0.200
 - PHP >= 8.0
 
+## MCP Server integration
+
+When the optional first-party MCP Server is installed, Folio contributes the
+read-only `folio_status` tool. It returns aggregate organizer counts without
+task titles, contact details, places, notes, URLs, images, or private page
+content.
+
 ## Documentation
 
 See [CHANGELOG.md](CHANGELOG.md) for the release notes.

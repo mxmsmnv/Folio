@@ -30,7 +30,7 @@ require_once __DIR__ . "/src/Admin/Roadmap.php";
  *
  * @author  Maxim Semenov <maxim@smnv.org> (smnv.org)
  * @license MIT
- * @version 1.0.0
+ * @version 1.0.1
  */
 class ProcessFolio extends Process implements Module, ConfigurableModule
 {
@@ -49,7 +49,7 @@ class ProcessFolio extends Process implements Module, ConfigurableModule
     {
         return [
             "title" => "Folio",
-            "version" => 100,
+            "version" => 101,
             "summary" =>
                 "Dashboard and per-section screens for the Folio organizer.",
             "author" => "Maxim Semenov",
