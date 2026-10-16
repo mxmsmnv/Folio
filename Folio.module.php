@@ -22,7 +22,7 @@ require_once __DIR__ . "/src/McpProviderTrait.php";
  *
  * @author  Maxim Semenov <maxim@smnv.org> (smnv.org)
  * @license MIT
- * @version 1.0.1
+ * @version 1.0.2
  */
 class Folio extends WireData implements Module
 {
@@ -37,7 +37,7 @@ class Folio extends WireData implements Module
     {
         return [
             "title" => "Folio",
-            "version" => 101,
+            "version" => 102,
             "summary" =>
                 "Personal organizer: Projects -> Sprints -> Tasks, Calendar, Contacts, Links, Places, Goals and Roadmap.",
             "author" => "Maxim Semenov",
@@ -47,6 +47,7 @@ class Folio extends WireData implements Module
             "autoload" => true,
             "singular" => true,
             "mcpProvider" => true,
+            "pocketWireProvider" => true,
         ];
     }
 

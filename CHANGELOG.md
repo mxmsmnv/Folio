@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2026-10-16
+
+### Added
+
+- Added a superuser-only, read-only PocketWire provider for aggregate organizer
+  counts without titles, contacts, places, notes, URLs, images, or mutations.
+
 ## [1.0.1] - 2026-08-25
 
 ### Added
